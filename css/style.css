@@ -1,6 +1,10 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0;  */
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -12,6 +16,29 @@
 .fa-solid {
     color: var(--main-color);
 }
+ /********************* Header *********************/         
+.header-accueil{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header-logo img{
+    width: 120px;
+}
+
+.item-nav{
+    display:inline;
+    padding: 20px;
+    font-size: 16px;
+}
+.item-nav:hover{
+    color: var(--main-color);
+    border-top: solid 4px;
+}
+
+
+
 
 body {
     display: flex;
