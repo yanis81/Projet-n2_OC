@@ -17,7 +17,8 @@
 <body>
     <div class="main-container">
         <header>
-            <section class="header-accueil">
+
+            <div class="header-accueil">
                 <figure class="header-logo">
                     <a href="#">
                         <img src="images/logo/Booki.png" alt="logo du site">
@@ -33,37 +34,39 @@
                         </li>
                     </ul>
                 </nav>
-            </section>
+            </div>
 
-            <section class="header-presentation">
+            <div class="header-presentation">
                 <h1>Trouver votre hébergements pour des vancances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
-            </section>
+            </div>
 
         </header>
-                               <!-- bar de recherche et filtres -->
-        <section class="recherche-filtre">
-                                             <!-- formulaire de recherche-->
-            <form class="conteneur-formulaire" method="get" action="">
-
-                <div class="formulaire">
-                    <label for="lieu">
-                        <i class="fa-solid fa-location-dot fa-black"></i>
-                    </label>
-                    <input id="lieu" name="lieu" type="search" placeholder="Marseille, France"> 
-                </div>
-
-                <div class="container-btn-form">
-                    <button class="btn-desktop" type="submit">Rechercher</button>
-                    <button class="btn-mobile" type="submit">
-                        <i class="fa-solid fa-magnifying-glass fa-black"></i>
-                    </button>
-                </div>
-
-            </form>
-
-        </section>
+        
         <main>
+                                   <!-- bar de recherche et filtres -->
+            <div class="recherche-filtre">
+                <!-- formulaire de recherche-->
+                <form class="conteneur-formulaire" method="get" action="">
+
+                        <div class="formulaire">
+                            <label for="lieu">
+                                <i class="fa-solid fa-location-dot fa-black"></i>
+                            </label>
+                            <input id="lieu" name="lieu" type="search" placeholder="Marseille, France"> 
+                        </div>
+                <!-- bouton de recherche  -->
+                        <div class="container-btn-form">
+                            <button class="btn-desktop" type="submit">Rechercher</button>
+                            <button class="btn-mobile" type="submit">
+                                <i class="fa-solid fa-magnifying-glass fa-black"></i>
+                            </button>
+                        </div>
+
+                </form>
+                <!-- les filtres a mettre ici -->
+            </div>
+                <!-- hebergements-and-populaires -->
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
 
