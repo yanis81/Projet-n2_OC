@@ -11,10 +11,15 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+
 }
 
 .fa-solid {
     color: var(--main-color);
+}
+
+.fa-black{
+    color:black;
 }
  /********************* Header *********************/         
 .header-accueil{
@@ -37,7 +42,64 @@
     border-top: solid 4px;
 }
 
+/********** containeur de recherche et filtres **********/
+.recherche-filtre{
+    padding: 30px 50px;
+}                 
 
+/************* formulaire de recherche ****************/
+
+form{
+    display: flex;
+    height: 60px;
+}
+
+.formulaire label{
+   font-size: 22px;
+   border-radius: 20px 0 0 20px;
+   cursor: pointer;
+   background-color: #F2F2F2;
+   padding: 20px;
+   width: 60px;
+}
+
+.formulaire input{
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border: 2px solid #F2F2F2;
+}
+
+.container-btn-form{
+    
+}
+
+.btn-desktop{
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+    border: none;
+    width: 100%; 
+    height: 100%;
+    padding: 0 22px;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    color: white;
+}
+
+.btn-mobile{
+    display: none;
+    width: 50px;
+    height: 100%;
+    padding: 0 10px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: var(--principale);
+}
 
 
 body {
