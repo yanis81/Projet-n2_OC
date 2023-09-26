@@ -128,22 +128,25 @@ form{
     letter-spacing: 1px;
  }
 
- .container-filtre :hover{
+#filtre-hover{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+ #filtre-hover :hover{
     background-color: var(--filter-bg-color); 
  }
-
-/* ************************************** session mentorat */
- /* .box-filtre :hover{
-    background-color: var(--filter-bg-color); 
- } */
 
  .logo-filtre{
     display: flex;
     font-size: 25px;
     width: 35px;
-    height: 60px;
+    height: 57px;
     align-items: center;
     justify-content: flex-start;
+    border-radius: 50%;
  }
 
  /****************** information ***********$******** */
@@ -227,8 +230,34 @@ a {
 }
 
 /****** Hebergements ***********/
-.hebergements {
+.main-hebergements {
     width: 65%;
+    margin: 0 auto;
+    /* display: flex;   */
+    justify-content: space-between;
+}
+
+.hébergements-card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+
+.carte{
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 15px 0;
+    width: 31%;
+    height: 230px;
+    cursor: pointer;
+    border: 5px solid #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.379);
+    background-color: rgb(255, 255, 255);
+}
+
+.hébergement-img{
+    max-width: 50%;
 }
 
 /****** Populaires ***********/
