@@ -26,7 +26,8 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin:10px 0px 50px 0px
+    margin:0px 0px 30px 0px;
+    height: 79px;
 }
 
 .header-accueil figure{
@@ -38,66 +39,103 @@
     width: 120px;
 }
 
-.item-nav{
-    display:inline;
-    padding: 30px;
-    font-size: 18px;
-    font-weight: 500;
+.header-presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 35px;
 }
-.item-nav:hover{
-    color: var(--main-color);
-    border-top: solid 4px;
+
+.header-presentation h1{
+    margin: 0px;
+    font-family: Raleway;
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
 }
 
 .header-presentation p{
-    font-size: 19px;
-    font-weight: 500;
+    margin: 0px;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.item-nav{
+    display:inline;
+    padding: 30px;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.item-nav a:hover{
+    color: var(--main-color);
+    border-top: solid 4px;
+    padding-top: 20px;
 }
 
 /********** containeur de recherche et filtres **********/
 .recherche-filtre{
-    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+    align-self: stretch;
 }                 
 
 /************* formulaire de recherche ****************/
-
-form{
+.conteneur-formulaire{
     display: flex;
+    width: 377px;
+    height: 49px;
+    align-items: center;
+}
+
+.formulaire{
+    display: flex;
+    align-items: center;
 }
 
 .formulaire label{
-   font-size: 22px;
-   border-radius: 20px 0 0 20px;
-   cursor: pointer;
-   background-color: #F2F2F2;
-   padding: 20px;
-   width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    border-radius: 15px 0 0 15px;
+    cursor: pointer;
+    background-color: #F2F2F2;
+    width: 50px;
+    height: 49px;
 }
 
 .formulaire input{
     padding: 20px;
     font-weight: bold;
-    font-size: 20px;
-    border: none;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
     border: 2px solid #F2F2F2;
+    height: 49px;
+    border-right: none;
 }
-
-/* .container-btn-form{
-    
-} */
 
 .btn-desktop{
     background-color: var(--main-color);
     color: white;
-    font-weight: bold;
-    font-size: 19px;
+    font-weight: 700;
+    font-size: 18px;
     letter-spacing: 1px;
     border: none;
-    width: 100%; 
-    height: 100%;
-    padding: 0 22px;
+    height: 49PX;
+    padding: 15px 16px;
     border: none;
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 15px 15px 0;
     cursor: pointer;
     color: white;
 }
@@ -119,21 +157,29 @@ form{
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    margin: 45px 0px 10px 0px;
+ }
+
+ .container-filtre h2 {
+    font-size: 18px;
+    font-weight: 700;
  }
 
  .box-filtre{
-    padding: 0 22px;
-    border: none;
-    border: var(--main-bg-color) solid 3px;
-    border-radius: 30px;
-    cursor: pointer;
     display: flex;
     justify-content: center;
-    height: 60px;
-    margin-left: 15px;
+    align-items: center;
+    padding: 4px 19px;
+    gap: 10px;
+    border: var(--main-bg-color) solid 3px;
+    border-radius: 25px;
     background-color: white;
+    height: 50px;
+    margin-left: 15px;
     letter-spacing: 1px;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    cursor: pointer; 
  }
 
 #filtre-hover{
@@ -149,9 +195,8 @@ form{
 
  .logo-filtre{
     display: flex;
-    font-size: 25px;
-    width: 35px;
-    height: 57px;
+    width: 22px;
+    height: 22px;
     align-items: center;
     justify-content: flex-start;
     border-radius: 50%;
@@ -161,18 +206,20 @@ form{
  .information{
     display: flex;
     align-items: center;
+    height: 24px;
+    gap: 10px;
+    align-self: stretch;
  }
  .information p{
-    font-size: 19px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .logo-info{
     border-radius: 50%;
     border: solid 1px var(--main-bg-color);
-    width: 30px;
-    height: 30px;
-    margin-right: 15px;
+    width: 24px;
+    height: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -182,6 +229,19 @@ form{
 body {
     display: flex;
     justify-content: center;
+}
+
+header{
+padding: 0px 50px;
+
+}
+main{
+    display: flex;
+padding: 0px 50px;
+flex-direction: column;
+align-items: flex-start;
+gap: 35px;
+align-self: stretch;
 }
 
 .main-container {
