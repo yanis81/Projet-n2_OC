@@ -259,13 +259,6 @@ a {
     font-size: 22px;
 }
 
-.card {
-    background-color: #fff;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.2));
-}
-
 .card img {
     object-fit: cover;
 }
@@ -289,6 +282,7 @@ a {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    gap: 40px;
 }
 
 .hebergements-and-populaires section {
@@ -389,21 +383,36 @@ a {
     align-items: center;
 }
 
+.populaires-title h2{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.populaires-title i{
+    width: 18px;
+    height: 15.75px;
+}
+
 .populaires-cards .card {
     display: flex;
-    margin-top: 40px;
+    margin-top: 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+    height: 144px;
 }
 
 .populaires-cards img {
     width: 33%;
-    height: 136px;
+    height: 144px;
+    padding:  5px 0px 5px 5px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
 .populaires-cards .card-content {
     width: 67%;
-    padding-left: 15px;
+    padding: 10px 5px 5px 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -411,20 +420,79 @@ a {
 }
 
 .populaires-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .populaires-cards .card-subtitle {
     margin: 0;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .populaires-cards .card-rating {
-    margin-bottom: 5px;
+    margin: 0;
 }
 
+.card-txt-pop{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+/***************activitée **************/
+#main-activite{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 30px;
+    padding: 30px;
+    width: 100%;
+    height: 80%;
+}
 
+.activite-title h2{
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+}
 
+.contener-card-actv{
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+}
+
+.contener-card-actv a{
+    width: 25%;
+}
+
+.card-activite{
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+    display: flex;
+    height: 439px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+} 
+
+.card-activite img{
+    border-radius: 20px 20px 0px 0px;
+    height: 380px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-activite p{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    width: 100%;
+    padding: 20px 19px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
