@@ -493,6 +493,39 @@ a {
     width: 100%;
     padding: 20px 19px;
 }
+/******************* footer *********************/
+footer{
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    background-color: var(--main-bg-color);
+}
+
+.footer_colonne{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 33%;
+}
+
+.footer_colonne h3{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.liens_footer{
+    margin-top: 15px;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.box_lien{
+    padding-left: 0;
+    margin: 0;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
