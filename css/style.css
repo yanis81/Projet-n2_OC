@@ -74,6 +74,7 @@ line-height: normal;
     font-weight: 400;
     line-height: normal;
 }
+
 .item-nav a:hover{
     color: var(--main-color);
     border-top: solid 4px;
@@ -116,7 +117,6 @@ line-height: normal;
 
 .formulaire input{
     padding: 20px;
-    font-weight: bold;
     font-size: 18px;
     text-align: center;
     font-weight: 700;
@@ -127,7 +127,6 @@ line-height: normal;
 
 .btn-desktop{
     background-color: var(--main-color);
-    color: white;
     font-weight: 700;
     font-size: 18px;
     letter-spacing: 1px;
@@ -149,7 +148,7 @@ line-height: normal;
     border: none;
     cursor: pointer;
     color: white;
-    background-color: var(--principale);
+    background-color: var(--main-color);
 }
  /* ******************* filtres ********************/ 
  .container-filtre{
@@ -600,5 +599,104 @@ footer{
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 768px) {
-    /* ... */
+    body{
+        margin: 0;
+    }
+    /* header accueil */
+    header{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+    }
+
+    .header-accueil{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-accueil figure{
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+        margin: 0;
+    }
+    /* nav et nav hover */
+    .box-nav{
+        width: 100%;
+    }
+
+    .header-accueil ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .item-nav{
+        display: inline-flex;
+        font-family: Raleway;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        flex-direction: row;
+        width: 50%;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .item-nav a:hover{
+        border-top: none;
+        padding: 0;
+    }
+
+    .box-nav li :hover{
+        color: var(--main-color);
+        padding-bottom: 15px;
+        border-bottom: solid 2px;
+        padding-bottom: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    /* header présentation */
+    .header-presentation{
+        padding: 0px 20px;
+    }
+    /* formulaire de recherche */
+    .recherche-filtre{
+        padding: 0px 20px;
+    }
+
+    .btn-desktop{
+        display: none;
+    }
+
+    .btn-mobile{
+        background-color: var(--main-color);
+        display: block;
+        height: 49px;
+        padding: 15px 16px;
+        border-radius: 15px;
+        cursor: pointer;
+        border: none;
+        color: white;
+    }
+
+    .formulaire label{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        border-radius: 15px 0 0 15px;
+        cursor: pointer;
+        background-color: #F2F2F2;
+        width:50px;
+        height: 49px;
+    }
+
+    main{
+        padding: 0;
+    }
 }
