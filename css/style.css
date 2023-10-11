@@ -525,7 +525,7 @@ footer{
 }
 
 .liens_footer  :hover{
-   font-weight: 600;
+   font-weight: 500;
 }
 
 .box_lien{
@@ -693,7 +693,7 @@ footer{
     }
 
     .btn-mobile i{
-        font-size: 17pxs;
+        font-size: 17px;
     }
 
     .formulaire input{
