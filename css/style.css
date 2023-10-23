@@ -11,7 +11,6 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
-
 }
 
 .fa-solid {
@@ -54,10 +53,10 @@
 .header-presentation h1{
     margin: 0px;
     font-family: Raleway;
-font-size: 22px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 .header-presentation p{
@@ -671,14 +670,28 @@ footer{
         padding: 0px 20px;
     }
     
-
-
     main{
         padding: 0;
     }
     /* formulaire de recherche */
     .recherche-filtre{
         padding: 0px 20px;
+    }
+
+    .conteneur-formulaire{
+        width:  100% ;
+        display: flex;
+        justify-content: center;
+    }
+
+    .formulaire{
+        width: 100%;
+    }
+    
+    .formulaire input{
+        width: 100%;
+        border: 1px solid var(--main-bg-color);
+        border-right:none ;
     }
 
     .btn-desktop{
@@ -695,12 +708,7 @@ footer{
     .btn-mobile i{
         font-size: 17px;
     }
-
-    .formulaire input{
-        border: 1px solid var(--main-bg-color);
-        border-right:none ;
-    } 
-    
+     
     .container-filtre{
         display: flex;
         flex-direction: column;
